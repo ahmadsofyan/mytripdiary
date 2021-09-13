@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/background"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="50dp"
+        android:text="New Diary"
+        android:textColor="@color/darkgray"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:layout_below="@+id/title"/>
+
+    <EditText
+        android:layout_below="@+id/tv1"
+        android:id="@+id/etTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textCapCharacters"/>
+
+    <TextView
+        android:layout_below="@id/etTitle"
+        android:id="@+id/tv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Image"
+        />
+
+    <ImageView
+        android:layout_below="@+id/tv2"
+        android:id="@+id/ivImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+
+    <Button
+        android:id="@+id/btnChoose"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/tv3"
+        android:layout_marginLeft="130dp"
+        android:layout_marginBottom="33dp"
+        android:text="Choose image"/>
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Set Date"
+        android:layout_below="@+id/ivImage"/>
+
+    <EditText
+        android:id="@+id/etDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:layout_below="@+id/tv3"
+        />
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Story"
+        android:layout_below="@+id/etDate"/>
+
+    <EditText
+        android:id="@+id/etStory"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:inputType="textLongMessage"
+        android:layout_below="@+id/tv4"/>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SAVE"
+        android:layout_marginLeft="130dp"
+        android:layout_below="@+id/etStory"/>
+
+    <Button
+        android:id="@+id/btnShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TRAVEL LIST"
+        android:layout_marginLeft="120dp"
+        android:layout_below="@+id/btnSave"/>
+
+</RelativeLayout>
